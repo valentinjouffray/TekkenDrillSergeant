@@ -1,0 +1,7 @@
+{
+  "name": "TekkenDrillSergeant",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
