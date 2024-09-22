@@ -1,20 +1,75 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-menu-button slot="start"></ion-menu-button>
+    <ion-title> TEKKEN Drill Sergeant </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12" size-md="8">
+        <h1 class="ion-text-center">
+          TEKKEN Drill Sergeant will help you train
+        </h1>
+        <p class="ion-text-center">
+          Unlock your potential with your drill sergeant!
+        </p>
+      </ion-col>
+    </ion-row>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <!-- Call to action section -->
+    <ion-row class="ion-justify-content-center ion-align-items-stretch">
+      <!-- Card 1: Random Drill -->
+      <ion-col size="12" size-md="4">
+        <ion-card color="warning">
+          <ion-card-header>
+            <ion-card-title>Ready to start drilling?</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Pick a random drill and start practicing now!
+          </ion-card-content>
+          <ion-button
+            expand="block"
+            color="light"
+            (click)="getRandomCharacter()"
+            >Choose a random drill!</ion-button
+          >
+        </ion-card>
+      </ion-col>
+
+      <!-- Choose a Character -->
+      <ion-col size="12" size-md="4">
+        <ion-card color="success">
+          <ion-card-header>
+            <ion-card-title
+              >Want to train a character in particular?</ion-card-title
+            >
+          </ion-card-header>
+          <ion-card-content>
+            Choose your favorite character and start practicing now!
+          </ion-card-content>
+          <ion-button
+            expand="block"
+            color="light"
+            [routerLink]="['/characters']"
+            >Choose a character!</ion-button
+          >
+        </ion-card>
+      </ion-col>
+
+      <!-- Create a Combo Chart -->
+      <ion-col size="12" size-md="4">
+        <ion-card color="danger">
+          <ion-card-header>
+            <ion-card-title>Want to create a combo?</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Create your own combo and start practicing now!
+          </ion-card-content>
+          <ion-button expand="block" color="light">Choose a move!</ion-button>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

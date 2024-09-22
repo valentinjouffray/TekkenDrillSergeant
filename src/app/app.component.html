@@ -1,3 +1,21 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content">
+      <ion-content>
+        <ion-list>
+          @for (page of pages; track page.url) {
+          <ion-menu-toggle auto-hide="false">
+            <ion-item [routerLink]="page.url" routerLinkActive="active-item">
+              @if (page.icon && page.icon !== '') {
+              <ion-icon slot="start" [name]="page.icon"></ion-icon>
+              }
+              <ion-label>{{ page.title }}</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+          }
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
 </ion-app>

@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Electric Wind God Fist Mastery",
+    "description": "Practice Kazuya's Electric Wind God Fist (EWGF) consistently. Focus on precise execution of the input (f, n, d, df+2) with no delay.",
+    "characterId": 1,
+    "tags": ["execution", "timing", "input", "EWGF", "Kazuya"]
+  },
+  {
+    "id": 2,
+    "name": "Perfect Electric Wind God Fist Block Punish",
+    "description": "Practice punishing blocked enemy moves with EWGF as fast as possible. Block and immediately perform EWGF.",
+    "characterId": 1,
+    "tags": ["punishment", "timing", "EWGF", "reaction", "Kazuya"]
+  },
+  {
+    "id": 3,
+    "name": "Wave Dash Pressure",
+    "description": "Practice Kazuya’s wave dash (f, n, d, df) movement to apply pressure on your opponent. Focus on using wave dash to mix up between attacks and throws.",
+    "characterId": 1,
+    "tags": ["movement", "pressure", "mix-ups", "Kazuya"]
+  },
+  {
+    "id": 4,
+    "name": "Giant Swing Setup",
+    "description": "Practice King’s Giant Swing throw (f, hcf+1) to catch opponents off guard. Focus on buffering the input from neutral to surprise the opponent.",
+    "characterId": 2,
+    "tags": ["throws", "surprise", "setup", "King"]
+  },
+  {
+    "id": 5,
+    "name": "Shining Wizard Combo",
+    "description": "Work on executing King's Shining Wizard (f, f, f+2+4) after a successful hit or launcher. This move requires precise input after dashing.",
+    "characterId": 2,
+    "tags": ["execution", "combo", "Shining Wizard", "King"]
+  },
+  {
+    "id": 6,
+    "name": "Multi-Throw Chain Practice",
+    "description": "Practice King’s multi-throw chain sequences. Focus on transitioning smoothly between throws and remembering the specific inputs to extend the throw sequence.",
+    "characterId": 2,
+    "tags": ["throws", "chains", "setup", "King"]
+  },
+  {
+    "id": 7,
+    "name": "Dragon Tail Whiff Punish",
+    "description": "Practice punishing Law’s Dragon Tail (d+3+4) when it whiffs. Work on immediately punishing with a fast move after you block or sidestep.",
+    "characterId": 3,
+    "tags": ["punishment", "reaction", "Law"]
+  },
+  {
+    "id": 8,
+    "name": "Legendary Dragon Rush Combo",
+    "description": "Focus on performing Law's legendary Dragon Rush combo (f+3, 1, 2, 1, 2). Ensure all hits connect, especially in juggle situations.",
+    "characterId": 3,
+    "tags": ["combo", "juggles", "Law"]
+  },
+  {
+    "id": 9,
+    "name": "Movement and Sidestep Mastery",
+    "description": "Practice Law’s movement options, focusing on sidestepping and backdashing. Use sidesteps to avoid linear attacks and create whiff opportunities.",
+    "characterId": 3,
+    "tags": ["movement", "spacing", "sidestep", "Law"]
+  },
+  {
+    "id": 10,
+    "name": "Lidia's Jab Punish",
+    "description": "Focus on using Lidia’s fast jab (1, 1) to punish small openings. Practice punishing whiffs and unsafe moves from opponents with jabs.",
+    "characterId": 4,
+    "tags": ["punishment", "reaction", "jab", "Lidia"]
+  },
+  {
+    "id": 11,
+    "name": "Karate High-Low Mixup",
+    "description": "Master Lidia's high-low mixups using her Karate stance (df+1+2) to confuse the opponent. Alternate between high and low attacks from the stance.",
+    "characterId": 4,
+    "tags": ["mix-ups", "stance", "Karate", "Lidia"]
+  },
+  {
+    "id": 12,
+    "name": "Lidia's Wall Carry Combo",
+    "description": "Work on Lidia’s wall carry combos. Start with a launcher, then focus on connecting hits that lead to the wall for maximum damage.",
+    "characterId": 4,
+    "tags": ["combo", "wall carry", "Lidia"]
+  }
+]

@@ -1,0 +1,60 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-menu-button slot="start"></ion-menu-button>
+    <ion-title [routerLink]="['/home']">TEKKEN Drill Sergeant</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">TEKKEN Drill Sergeant</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+    @for (drill of drillList$ | async; track drill.id) {
+    <ion-item>
+      <ion-checkbox
+        slot="start"
+        (click)="checkboxClicked(drill.id)"
+      ></ion-checkbox>
+      <ion-label>
+        <h2>{{ drill.name }}</h2>
+        <p>{{ drill.description }}</p>
+        <p><strong>Tags: </strong> {{ drill.tags.join(', ') }}</p>
+      </ion-label>
+      <ion-button slot="end" [routerLink]="['/drill-sheet', drill.id]">
+        <ion-icon name="create-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+    }
+  </ion-list>
+
+  <ion-button [routerLink]="['/drill-sheet']">
+    <ion-icon slot="start" name="add"> </ion-icon>
+    Add Drill
+  </ion-button>
+  <ion-button (click)="importDrills()">
+    <ion-icon slot="start" name="cloud-download-outline"></ion-icon>
+    Import Drills
+  </ion-button>
+  @if (importedDrills) {
+  <h2>Imported drills:</h2>
+  @for (drill of importedDrills; track drill.id) {
+  <ion-item>
+    <ion-checkbox
+      slot="start"
+      (click)="checkboxClicked(drill.id)"
+    ></ion-checkbox>
+    <ion-label>
+      <h2>{{ drill.name }}</h2>
+      <p>{{ drill.description }}</p>
+      <p><strong>Tags: </strong> {{ drill.tags.join(', ') }}</p>
+    </ion-label>
+    <ion-button slot="end" (click)="deleteDrill(drill.id)">
+      <ion-icon name="trash-outline"></ion-icon>
+    </ion-button>
+  </ion-item>
+  } }
+</ion-content>

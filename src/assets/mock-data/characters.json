@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "name": "Kazuya Mishima",
+    "games": [
+      "Tekken",
+      "Tekken 2",
+      "Tekken 3",
+      "Tekken 4",
+      "Tekken 5",
+      "Tekken 6",
+      "Tekken 7",
+      "Tekken 8"
+    ],
+    "description": "Kazuya Mishima is a central character in the Tekken series, known for his intense rivalry with his father, Heihachi Mishima. He possesses the Devil Gene, which grants him powerful and destructive abilities."
+  },
+  {
+    "id": 2,
+    "name": "King II",
+    "games": [
+      "Tekken",
+      "Tekken 2",
+      "Tekken 3",
+      "Tekken 4",
+      "Tekken 5",
+      "Tekken 6",
+      "Tekken 7",
+      "Tekken 8"
+    ],
+    "description": "King II is a professional wrestler who follows in the footsteps of the original King. He wears a jaguar mask and is known for his powerful throws and high-flying wrestling moves. He fights to raise money for his orphanage."
+  },
+  {
+    "id": 3,
+    "name": "Marshall Law",
+    "games": [
+      "Tekken",
+      "Tekken 2",
+      "Tekken 3",
+      "Tekken 4",
+      "Tekken 5",
+      "Tekken 6",
+      "Tekken 7",
+      "Tekken 8"
+    ],
+    "description": "Marshall Law is a martial artist inspired by Bruce Lee. Known for his fast and fluid fighting style, he fights to provide for his family and to prove himself as a top fighter."
+  },
+  {
+    "id": 4,
+    "name": "Lidia Sobieska",
+    "games": ["Tekken 7", "Tekken 8"],
+    "description": "Lidia Sobieska is the Prime Minister of Poland and a skilled martial artist. She is a powerful fighter who uses her political influence to make positive changes while proving her strength in battle."
+  }
+]
