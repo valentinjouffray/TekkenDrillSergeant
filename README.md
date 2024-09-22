@@ -13,6 +13,7 @@ Characters are defined by their:
 - Name
 - Games
 - Description
+
 Drills are defined by their:
 - Name
 - Description
